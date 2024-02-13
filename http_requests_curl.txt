@@ -1,0 +1,19 @@
+curl -X POST -H "Content-Type: application/json" -d Hi http://localhost:8080/facade_service
+
+curl -X POST -H "Content-Type: application/json" -d "Hello there" http://localhost:8080/facade_service
+
+curl -X POST -H "Content-Type: application/json" -d "General Kenobi" http://localhost:8080/facade_service
+
+
+
+curl -X POST -H "Content-Type: application/json" -d "Hello there" http://localhost:8081/message_service
+
+curl -X POST -H "Content-Type: application/json" -d "Hello there" http://localhost:8082/log_service
+
+
+
+curl -X GET -H "Accept text/html" http://localhost:8080/facade_service
+
+curl -X GET -H "Accept text/html" http://localhost:8081/message_service
+
+curl -X GET -H "Accept text/html" http://localhost:8082/log_service
